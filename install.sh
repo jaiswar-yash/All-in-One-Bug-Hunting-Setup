@@ -23,10 +23,6 @@ echo "It looks like go is not installed, would you like to install it now"
 					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc	
 					source ~/.bashrc
 					sleep 1
-					break
-					;;
-	esac	
-done
 fi
 
 #Directory to store Weapons 
