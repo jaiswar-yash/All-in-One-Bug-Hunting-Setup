@@ -10,12 +10,6 @@ sudo apt-get autoremove -y
 #Setup of GO lang
 if [[ -z "$GOPATH" ]];then
 echo "It looks like go is not installed, would you like to install it now"
-echo "Please select an option : "
-choices=("yes" "no")
-select choice in "${choices[@]}"; do
-        case $choice in
-                yes)
-
 					LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
 					echo "Installing Golang"
 					wget https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz
@@ -30,10 +24,6 @@ select choice in "${choices[@]}"; do
 					source ~/.bashrc
 					sleep 1
 					break
-					;;
-				no)
-					echo "You will regret this if you already had not installed go..."
-					exit 1
 					;;
 	esac	
 done
