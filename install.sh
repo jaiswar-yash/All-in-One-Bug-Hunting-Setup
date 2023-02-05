@@ -8,7 +8,6 @@ sudo apt-get install git -y
 sudo apt-get autoremove -y
 
 #Setup of GO lang
-if [[ -z "$GOPATH" ]];then
 echo "[+] It looks like go is not installed, would you like to install it now"
 					LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
 					echo "[+] Installing Golang"
@@ -23,8 +22,6 @@ echo "[+] It looks like go is not installed, would you like to install it now"
 					echo 'export GOPATH=$HOME/go'	>> /home/$USER/.bashrc			
 					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> /home/$USER/.bashrc	
 					source /home/$USER/.bashrc
-					sleep 1
-fi
 
 #Directory to store Weapons 
 echo "[+] Making a directory to Store your weapons"
