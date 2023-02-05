@@ -8,7 +8,7 @@ sudo apt-get install git -y
 sudo apt-get autoremove -y
 
 #Setup of GO lang
-echo "[+] It looks like go is not installed, would you like to install it now"
+echo "[+] Installing go, if already go is installed then updating it"
 					LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
 					echo "[+] Installing Golang"
 					wget https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz
