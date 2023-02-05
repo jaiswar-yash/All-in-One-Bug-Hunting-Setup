@@ -1,3 +1,4 @@
+#!/bin/bash
 G='\033[0;32m' #Green Colour
 NC='\033[0m'   # No colour
 
@@ -25,11 +26,11 @@ echo "${G}[+] Installing go, if already go is installed then updating it${NC}"
 					echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
 					echo 'export GOPATH=$HOME/go'	>> ~/.bashrc			
 					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc	
-					source ~/.bashrc
+					. ~/.bashrc
 					# Writing in .zshrc
 					echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc
 					echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.zshrc			
-					source ~/.zshrc
+					. ~/.zshrc
 #Directory to store Weapons 
 echo "${G}[+] Making a directory to Store your weapons${NC}"
 mkdir ~/Weapons
