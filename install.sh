@@ -19,10 +19,10 @@ echo "[+] It looks like go is not installed, would you like to install it now"
 					export GOROOT=/usr/local/go
 					export GOPATH=$HOME/go
 					export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-					echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
-					echo 'export GOPATH=$HOME/go'	>> ~/.bashrc			
-					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc	
-					source ~/.bashrc
+					echo 'export GOROOT=/usr/local/go' >> /home/$USER/.bashrc
+					echo 'export GOPATH=$HOME/go'	>> /home/$USER/.bashrc			
+					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> /home/$USER/.bashrc	
+					source /home/$USER/.bashrc
 					sleep 1
 fi
 
