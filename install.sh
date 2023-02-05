@@ -13,6 +13,7 @@ echo "[+] It looks like go is not installed, would you like to install it now"
 					LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
 					echo "[+] Installing Golang"
 					wget https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz
+					sudo chmod 777 ${LATEST_GO_VERSION}.linux-amd64.tar.gz
 					sudo tar -xvf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
 					sudo mv go /usr/local
 					export GOROOT=/usr/local/go
