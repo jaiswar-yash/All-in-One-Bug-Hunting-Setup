@@ -26,12 +26,12 @@ echo "${G}[+] Installing go, if already go is installed then updating it${NC}"
 					echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
 					echo 'export GOPATH=$HOME/go'	>> ~/.bashrc			
 					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc	
-					. ~/.bashrc
+					source ~/.bashrc
 					# Writing in .zshrc
 					echo 'export GOROOT=/usr/local/go' >> ~/.zshrc
 					echo 'export GOPATH=$HOME/go' >> ~/.zshrc
 					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.zshrc
-					. ~/.zshrc
+					source ~/.zshrc
 #Directory to store Weapons 
 echo "${G}[+] Making a directory to Store your weapons${NC}"
 mkdir ~/Weapons
