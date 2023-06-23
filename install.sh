@@ -119,7 +119,7 @@ echo "${G}[+] A bullet called gau is loaded${NC}"
 
 #assetfinder
 echo "${G}[+] Installing assetfinder${NC}"
-go get install github.com/tomnomnom/assetfinder@latest
+go install github.com/tomnomnom/assetfinder@latest
 echo "${G}[+] A bullet called assetfinder is loaded${NC}"
 
 echo "${G}[+] Installing dnscan${NC}"
